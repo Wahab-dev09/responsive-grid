@@ -1,0 +1,108 @@
+h1{
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px 0px;
+    max-width: 1000px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .grid-details{
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  margin: 10px auto;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .grid{
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto 0px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .grid>div{
+    width: 100%;
+    border: none;
+    height: 90px;
+  }
+  .grid>div:nth-child(5),.grid>div:nth-child(6),.grid>div:nth-child(7),.grid>div:last-child{
+  display: none;
+  }
+  .grid>div>img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    height: 90px;
+  }
+  @media only screen and (min-height:700px){
+    .grid>div:nth-child(5){
+        display: flex;
+    }
+    h1{
+        padding: 25px 0px;
+    }
+    .grid-details{
+        margin: 14px auto;
+        }
+  }
+  @media only screen and (min-height:800px){
+    .grid>div:nth-child(6){
+        display: flex;
+    }
+    h1{
+        padding: 30px 0px;
+    }
+    .grid>div{
+        height: 93px;
+      }
+    .grid>div>img{
+        height: 93px;
+      }
+  }
+  @media only screen and (min-height:900px){
+    .grid{
+        gap: 10px;
+    }
+    .grid>div{
+        height: 105px;
+      }
+    .grid>div>img{
+        height: 105px;
+      }
+  }
+  @media only screen and (min-width:500px){
+    .grid{
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 10px;
+    }
+    .grid>div:nth-child(5),.grid>div:nth-child(6){
+      display: flex;
+      }
+  }
+  @media only screen and (min-width:800px){
+    .grid{
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px 10px;
+    }
+    .grid>div{
+        height: 200px;
+      }
+    .grid>div>img{
+        height: 200px;
+      }
+  }
+  @media only screen and (min-width:1000px){
+    h1{
+        padding: 30px 0px;
+    }
+    .grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px 10px;
+    }
+    .grid>div:nth-child(7),.grid>div:last-child{
+      display: flex;
+    }
+  }
