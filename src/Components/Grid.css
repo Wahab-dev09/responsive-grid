@@ -5,14 +5,25 @@ h1{
     max-width: 1000px;
     text-align: center;
     font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(24, 24, 24);
   }
   .grid-details{
   width: 90%;
   max-width: 1000px;
   display: flex;
+  padding: 0px 2px;
   margin: 10px auto;
   justify-content: space-between;
   align-items: center;
+  }
+  .grid-details>p>span:nth-child(1){
+    font-size: 1.1rem;
+    font-weight: 450;
+    margin-right: 6px;
+  }
+  .grid-details>p>span:nth-child(2){
+    color: rgb(24, 24, 24);
   }
   .grid{
     width: 90%;
@@ -25,17 +36,18 @@ h1{
   .grid>div{
     width: 100%;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.7);
     height: 90px;
+    background-color: rgba(197, 203, 255, 0.08);
+    border-radius: 10px;
+    font-size: 1.1rem;
+  font-weight: 450;
   }
   .grid>div:nth-child(5),.grid>div:nth-child(6),.grid>div:nth-child(7),.grid>div:last-child{
   display: none;
-  }
-  .grid>div>img{
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: center;
-    height: 90px;
   }
   @media only screen and (min-height:700px){
     .grid>div:nth-child(5){
@@ -58,9 +70,6 @@ h1{
     .grid>div{
         height: 93px;
       }
-    .grid>div>img{
-        height: 93px;
-      }
   }
   @media only screen and (min-height:900px){
     .grid{
@@ -69,11 +78,8 @@ h1{
     .grid>div{
         height: 105px;
       }
-    .grid>div>img{
-        height: 105px;
-      }
   }
-  @media only screen and (min-width:500px){
+  @media only screen and (min-width:501px){
     .grid{
       grid-template-columns: 1fr 1fr;
       gap: 10px 10px;
@@ -81,8 +87,11 @@ h1{
     .grid>div:nth-child(5),.grid>div:nth-child(6){
       display: flex;
       }
+      .grid-details{
+        padding: 0px 15px;
+        }
   }
-  @media only screen and (min-width:800px){
+  @media only screen and (min-width:801px){
     .grid{
       grid-template-columns: 1fr 1fr 1fr;
       gap: 10px 10px;
@@ -90,11 +99,8 @@ h1{
     .grid>div{
         height: 200px;
       }
-    .grid>div>img{
-        height: 200px;
-      }
   }
-  @media only screen and (min-width:1000px){
+  @media only screen and (min-width:1001px){
     h1{
         padding: 30px 0px;
     }

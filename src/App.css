@@ -4,5 +4,7 @@
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: rgb(168, 168, 168);
+  background-image: radial-gradient(rgba(84, 110, 227, 0.1) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+  background-color: #dadada;
 }
