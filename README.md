@@ -1,6 +1,7 @@
-# Responsive Grid Component
+# Responsive Grid Project
 
-<p align="center">
+<p align="left">
+ <img src="https://github.com/user-attachments/assets/abd86a86-3122-4d94-8563-1028d4f5dd34" alt="Grid Image" width="50%" />
 </p>
 
 ## Overview
