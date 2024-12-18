@@ -8,3 +8,9 @@
 html{
   font-size: 15px;
 }
+@media only screen and (min-width:801px){
+  html{    font-size: 15px;  }
+}
+@media only screen and (min-width:1201px){
+  html{    font-size: 17px;  }
+}
